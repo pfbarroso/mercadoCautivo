@@ -1,4 +1,5 @@
 #define NOMBRE_LENGTH 30
+#define CantProduct 100
 
 typedef struct
 {
@@ -11,4 +12,5 @@ typedef struct
 
 }eProducto;
 
-void  menuProducto (eProducto product[], int tamanio);
+void menuProducto (eProducto product[], int tamanio);
+void productoABM(int, eProducto[]);

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1524603940 source:/home/pablo/Programmazione/mercadoCautivo-master/lib.c
+	"lib.h"
+
+1524593470 /home/pablo/Programmazione/mercadoCautivo-master/producto.h
+
+1524592909 source:/home/pablo/Programmazione/mercadoCautivo-master/main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+
+1524603940 /home/pablo/Programmazione/mercadoCautivo-master/lib.h
+	<stdlib.h>
+	<string.h>
+	"producto.h"
+	"usuarios.h"
+
+1524605428 /home/pablo/Programmazione/mercadoCautivo-master/usuarios.h
+	<ctype.h>
+
+1524588760 source:/home/pablo/Programmazione/mercadoCautivo-master/producto.c
+	"producto.h"
+
+1524605594 source:/home/pablo/Programmazione/mercadoCautivo-master/usuarios.c
+	"usuarios.h"
+	<curses.h>
+	<unistd.h>
+

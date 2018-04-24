@@ -1,55 +1,100 @@
-#include "producto.h"
-
-int displayMenuABM (char texto[])
+#include "lib.h"
+void menuOpciones(char cadena[])
 {
-    int opcion;
+	printf(cadena);
+}
 
-    printf("%s", texto);
-    scanf("%d", &opcion);
+void inicializar(eUsuario arrayUsers[],int qty)
+{
+	int i;
+	for(i=0; i<qty; i++)
+		{
+			arrayUsers[i].status= 0;
+		}
+	/* for(i=0; i<qtyU; i++)
+	 {
+	     viewers[i].idUser = 0;
+	     viewers[i].estado = 0;
+	 }*/
 
-    switch (opcion)
-    {
-        case 1:
-            opcion=1;
-            break;
-        case 2:
-            opcion=2;
-            break;
-        case 3:
-            opcion=3;
-            break;
-        case 4:
-            opcion=4;
-            break;
-        case 5:
-            opcion=5;
-            break;
-        case 6:
-            opcion =6;
-            break;
-         case 7:
-            opcion =7;
-            break;
-        case 8:
-            opcion =8;
-            break;
-        case 9:
-            opcion =9;
-            break;
-         case 10:
-            opcion =10;
-            break;
-        case 0:
-            opcion=0;
-            break;
+}
 
-        default:
-            printf("\n\tERROR! No ha ingresado una opcion valida.\n");
-            printf("\n");
-            system("pause");
-            system ("cls");
-            break;
+void funcionSwitchMenu(int primeraOpcion, eUsuario users[], eProducto items[])
+{
+	int opcionMenu2;
+	switch(primeraOpcion)
+		{
+		case 1:
+			do
+				{
+					menuOpciones(
+					    "\n\tMenu: USUARIOS\n"
+					    "\n==============================\n"
+					    "1. ALTA\n"
+					    "2. BAJA\n"
+					    "3. MODIFICACION\n"
+					    "9. SALIR\n"
+					    "Elija una opcion: ");
 
-    }
-    return opcion;
+					scanf("%d",&opcionMenu2);
+					printf("==============================\n");
+					userABM(opcionMenu2, users);
+				}
+			while(opcionMenu2 != 9);
+			break;
+
+		case 2:
+			do
+				{
+					menuOpciones(
+					    "\n\tMenu: PRODUCTOS\n"
+					    "\n==============================\n"
+					    "1. ALTA\n"
+					    "2. BAJA\n"
+					    "3. MODIFICACION\n"
+					    "9. SALIR\n"
+					    "Elija una opcion: ");
+
+					scanf("%d",&opcionMenu2);
+					printf("==============================\n");
+					productoABM(opcionMenu2, items);
+				}
+			while(opcionMenu2 != 9);
+			break;
+		case 3:
+
+			break;
+		}
+
+}
+
+void eliminarNuevaLinea(char cadena[])
+{
+	int i;
+	for(i=0; i<=strlen(cadena); i++)
+		{
+
+			if(cadena[i] == '\n')
+				{
+					cadena[i] = '\0';
+				}
+
+		}
+}
+
+char validarSiNo()
+{
+char choice;
+getchar();
+scanf("%c",&choice);
+choice = tolower(choice);
+
+while(choice != 'n' && choice != 's')
+{
+printf("ERROR! No reconocido. Reintente: ");
+getchar();
+scanf("%c",&choice);
+choice = tolower(choice);
+}
+return choice;
 }
