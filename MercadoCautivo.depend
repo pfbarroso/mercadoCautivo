@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1524577976 source:c:\test\rizzi\mercadocautivo\lib.c
+
+1524576224 source:c:\test\rizzi\mercadocautivo\producto.c
+
+1524578414 source:c:\test\rizzi\mercadocautivo\usuarios.c
+	"usuarios.h"
+
+1524578400 source:c:\test\rizzi\mercadocautivo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"usuarios.h"
+	"producto.h"
+
+1524577073 c:\test\rizzi\mercadocautivo\lib.h
+
+1524578383 c:\test\rizzi\mercadocautivo\usuarios.h
+
+1524576211 c:\test\rizzi\mercadocautivo\producto.h
+
