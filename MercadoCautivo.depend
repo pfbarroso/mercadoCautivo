@@ -21,10 +21,22 @@
 
 1524579649 source:c:\test\mercadocautivo\lib.c
 
-1524579649 source:c:\test\mercadocautivo\producto.c
+1524580358 source:c:\test\mercadocautivo\producto.c
+	"producto.h"
 
-1524579649 source:c:\test\mercadocautivo\usuarios.c
+1524580358 source:c:\test\mercadocautivo\usuarios.c
 	"usuarios.h"
 
-1524579649 c:\test\mercadocautivo\usuarios.h
+1524580340 c:\test\mercadocautivo\usuarios.h
+
+1524580174 source:c:\test\mercadocautivo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+
+1524579817 c:\test\mercadocautivo\lib.h
+	"producto.h"
+	"usuarios.h"
+
+1524580253 c:\test\mercadocautivo\producto.h
 

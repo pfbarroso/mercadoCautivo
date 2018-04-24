@@ -1,4 +1,3 @@
-
 #include "usuarios.h"
 
 void  menuUsuario (eUsuario usuarioss[], int tamanio)
@@ -6,7 +5,7 @@ void  menuUsuario (eUsuario usuarioss[], int tamanio)
     int i;
     int opcion;
 
-   opcion= displayMenuABM( "1- Alta \n 2-Baja \n 3- Modificacion \n \tSeleccione la opcion: \t ");
+   opcion = displayMenuABM( "1- Alta \n 2-Baja \n 3- Modificacion \n \tSeleccione la opcion: \t ");
     switch (opcion)
                 {
                     case 1:

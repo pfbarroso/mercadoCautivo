@@ -1,8 +1,10 @@
+#define NOMBRE_LENGTH 30
+#define PASS_LENGTH 10
 
 typedef struct
 {
-    char nombre [30];
-    char password [12];
+    char nombre [NOMBRE_LENGTH];
+    char password [PASS_LENGTH];
     int idUsuario;
     int status;
     float promCalif;

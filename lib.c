@@ -1,3 +1,4 @@
+#include "producto.h"
 
 int displayMenuABM (char texto[])
 {
@@ -43,8 +44,9 @@ int displayMenuABM (char texto[])
             break;
 
         default:
-            printf("no ha ingresado una opcion valida");
+            printf("\n\tERROR! No ha ingresado una opcion valida.\n");
             printf("\n");
+            system("pause");
             system ("cls");
             break;
 

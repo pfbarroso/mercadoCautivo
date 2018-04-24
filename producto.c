@@ -1,3 +1,5 @@
+#include "producto.h"
+
 void menuProducto (eProducto product[], int tamanio)
 {
     int i;

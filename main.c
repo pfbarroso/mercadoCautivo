@@ -4,7 +4,6 @@
 #define CantUsuario 10
 #define CantProduct 100
 
-
 int main()
 {
     int opcion;
@@ -18,41 +17,47 @@ int main()
     do
     {
         opcion=displayMenuABM(
-                              "\n--- Menu General---\n\n"
-                              " 1-  Menu de Usuario "
-                              "\n 2-  Menu de Productos"
-                              "\n 3-  Comprar producto"
-                              "\n 4-  Listar Publicaciones de Usuario "
-                              "\n 5-  Listar Publicaciones "
-                              "\n 6- Listar usuarios\n \n 0-  SALIR!"
-                              "\t \t Ingrese la opcion deseaba:\t"
+                              "\n--- Menu General---\n"
+                              "\n1- Menu de Usuario "
+                              "\n2- Menu de Productos"
+                              "\n3- Comprar producto"
+                              "\n4- Listar Publicaciones de Usuario "
+                              "\n5- Listar Publicaciones "
+                              "\n6- Listar usuarios"
+                              "\n\n0- SALIR"
+                              "\n\n\tIngrese la opcion deseada: "
                               );
         switch (opcion)
         {
         case 1:
-            //menu
+            //menu Users
             break;
         case 2:
+            //Menu Productos
             break;
         case 3:
+            //Comprar
             break;
         case 4:
+            //Listar Publicaciones de 1 User
             break;
         case 5:
+            //Listar ALL Publ.
             break;
         case 6:
+            //Listar Usuarios
             break;
         case 0:
-            opcion=0;
             break;
         default:
-            printf("no ha ingresado una opcion valida");
+            printf("\n\tERROR! No ha ingresado una opcion valida.\n");
             printf("\n");
+            system("pause");
             system ("cls");
             break;
         }
     }
     while (opcion !=0);
-    printf("\n CHAU\n");
+
     return 0;
 }

@@ -1,6 +1,8 @@
+#define NOMBRE_LENGTH 30
+
 typedef struct
 {
-    char nombre [30];
+    char nombre [NOMBRE_LENGTH];
     float precio;
     int idProducto;
     int stock;
@@ -8,6 +10,5 @@ typedef struct
     int status;
 
 }eProducto;
-
 
 void  menuProducto (eProducto product[], int tamanio);
